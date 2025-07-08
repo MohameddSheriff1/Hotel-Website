@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELSHERIF Hotel & Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+
+    <!-- Top Header -->
+    <div class="top-header" id="topHead">
+        <div class="contact-info">
+            <span>📧 info@hurghadaELSHERIF.com</span>
+            <span>📍 Kawther Rd, Hurghada, Red Sea - Egypt</span>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="nav">
+        <div class="logo">
+            <a href="#"><img src="imgs/Layer_0[1].png" alt="Logo" /></a>
+            <span>ELSHERIF Hotel & Resort</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Rooms">Rooms</a></li>
+            <li><a href="html/Activities.html" target="_blank">Activities</a></li>
+            <li><a href="html/Facilities.html">Facilities</a></li>
+            <li><a href="html/Events.html">Events</a></li>
+        </ul>
+        <div class="book-now">
+            <a href="html/login.html" target="_blank">
+                <button class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                    <div class="text">Book Now</div>
+                </button>
+            </a>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide fade">
+                <div class="number-text">1 / 3</div>
+                <img src="/imgs/pix.jpg" alt="slide-image" class="slide-image">
+                <div class="hero-text">
+                    <h1>Welcome to ELSHERIF Hotel</h1>
+                    <p>Experience luxury and comfort in the heart of the city. Book your perfect stay today!</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="number-text">2 / 3</div>
+                <img src="/imgs/slidees.jpg" alt="Nature scenery" class="slide-image">
+                <div class="hero-text">
+                    <h1>Welcome to ELSHERIF Hotel</h1>
+                    <p>Experience luxury and comfort in the heart of the city. Book your perfect stay today!</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="number-text">3 / 3</div>
+                <img src="/imgs/pexels-vika-glitter-392079-27105563.jpg" alt="Mountain scenery" class="slide-image">
+                <div class="hero-text">
+                    <h1>Welcome to ELSHERIF Hotel</h1>
+                    <p>Experience luxury and comfort in the heart of the city. Book your perfect stay today!</p>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button>
+        </div>
+
+        <!-- Dot Indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-field">
+                <label for="checkin">Check In</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="booking-field">
+                <label for="checkout">Check Out</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="booking-field">
+                <label for="rooms">Rooms</label>
+                <select id="rooms">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <button class="book-now-btn" onclick="validateBooking()">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-left">
+            <h1>SERVICES</h1>
+            <p>
+                At ELSHERIF Hotel, we pride ourselves on offering a host of exceptional services designed to enhance your stay. 
+                From exquisite dining options to activities and attentive concierge services, every detail is tailored to ensure a delightful and memorable experience.
+                Whether you seek relaxation, adventure, or family-friendly fun, our resort is dedicated to...
+            </p>
+        </div>
+        <div class="services-right">
+            <div class="cards">
+                <div class="card bottom bg1">
+                    <img src="imgs/computer.svg" class="imgg" alt="Free WiFi">
+                    <p>FREE WIFI</p>
+                </div>
+                <div class="card bottom left bg2">
+                    <img src="imgs/front-desk.svg" class="imgg" alt="Front Desk Service">
+                    <p>24-HOUR FRONT DESK SERVICE</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card bg3">
+                    <img src="imgs/luggage.svg" class="imgg" alt="Luggage Storage">
+                    <p>LUGGAGE STORAGE</p>
+                </div>
+                <div class="card left bg4">
+                    <img src="imgs/gym.svg" class="imgg" alt="Exercise Gym">
+                    <p>EXERCISE GYM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Amenities Section -->
+    <section class="hotel-amenities">
+        <div class="container">
+            <div class="top-title">
+                <h1>Hotel Amenities</h1>
+                <p class="title-text">Enjoy your holiday</p>
+            </div>
+            <div class="tabs">
+                <div class="tab active" data-tab="restaurants">
+                    <i class="icon">☕</i> Restaurants
+                </div>
+                <div class="tab" data-tab="swimming-pools">
+                    <i class="icon">🌊</i> Swimming Pools
+                </div>
+                <div class="tab" data-tab="conference-room">
+                    <i class="icon">🏢</i> Conference Room
+                </div>
+                <div class="tab" data-tab="clinic">
+                    <i class="icon">❤</i> Clinic
+                </div>
+                <div class="tab" data-tab="entertainment">
+                    <i class="icon">🎤</i> Entertainment
+                </div>
+            </div>
+
+            <div class="tab-content" id="restaurants">
+                <img src="imgs/restruant.jpg" class="imggh" alt="Restaurant Image" />
+                <h2>Restaurants</h2>
+                <p>Several outlets around the hotel serve international cuisine in the form of an open buffet or served meals. 
+                During your stay, you can taste a wide variety of different meals from different cultures.</p>
+            </div>
+            <div class="tab-content" id="swimming-pools" style="display: none;">
+                <img src="imgs/pooll.jpg" class="imggh" alt="Swimming Pools" />
+                <h2>Swimming Pools</h2>
+                <p>Seagull has 6 swimming pools including an aqua park. All swimming pools are surrounded by shaded loungers. 
+                For drinks, there is a bar by each swimming pool. The aqua park has 3 water slides for adults and 8 for children.</p>
+            </div>
+            <div class="tab-content" id="conference-room" style="display: none;">
+                <img src="imgs/conferencs.jpg" class="imggh" alt="Conference Room" />
+                <h2>Conference Room</h2>
+                <p>Our meeting rooms provide a beautiful surrounding that supports creativity and success. 
+                The two meeting rooms (one with 200sqm and one with 50sqm) ensure a pleasant working atmosphere for up to 200 people.</p>
+            </div>
+            <div class="tab-content" id="clinic" style="display: none;">
+                <img src="imgs/Clinic.jpg" class="imggh" alt="Clinic" />
+                <h2>Clinic</h2>
+                <p>If you feel unwell, we won't let anything ruin your holiday. Doctors are available 24/7 in our clinic.</p>
+            </div>
+            <div class="tab-content" id="entertainment" style="display: none;">
+                <img src="imgs/party.jpg" class="imggh" alt="Entertainment" />
+                <h2>Entertainment</h2>
+                <p>Our animation team organizes beach and pool games, such as volleyball, bocce, darts, Zumba, or belly dancing classes. 
+                Each evening, there is a special program in our amphitheater, live music during dinner, and late-night disco.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooming" id="Rooms">
+        <div class="container">
+            <h1>Rooms</h1>
+        </div>
+        <div class="room-container">
+            <div class="room-card">
+                <img src="./imgs/QUADRUPLE.jpg" alt="Quadruple Room">
+                <h3>QUADRUPLE ROOM</h3>
+                <p>Parliament house view, one queen bed and three single beds with ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/Waterfront_superior.jpg" alt="Waterfront Superior">
+                <h3>WATERFRONT SUPERIOR</h3>
+                <p>Waterfront views, balcony, king bed, lounge area, and modern ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/Waterfront-Studio.jpg" alt="Waterfront Studio">
+                <h3>WATERFRONT STUDIO</h3>
+                <p>Waterfront views, king bed, lounge area, and modern ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/Superior_standard.jpg" alt="Superior King Standard">
+                <h3>SUPERIOR KING STANDARD</h3>
+                <p>Featuring a king size bed, lounge area, and ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/WaterFront-twin.jpg" alt="Waterfront Twin">
+                <h3>WATERFRONT TWIN</h3>
+                <p>Waterfront view, king bed as well as single bed with ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/Standard_twin.jpg" alt="Standard Twin">
+                <h3>STANDARD TWIN</h3>
+                <p>Parliament house view, queen bed as well as single bed with ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/Waterfront-king.jpg" alt="Waterfront King">
+                <h3>WATERFRONT KING</h3>
+                <p>Waterfront view, king bed with ensuite.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+            <div class="room-card">
+                <img src="./imgs/Standard_queen.jpg" alt="Standard Queen">
+                <h3>STANDARD QUEEN</h3>
+                <p>Featuring a queen sized bed with ensuite bathroom.</p>
+                <a href="html/login.html" target="_blank">Book Now→</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <img src="imgs/Layer_0[1].png" alt="Logo" class="footer-logo">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
